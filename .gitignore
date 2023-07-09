@@ -1,0 +1,9 @@
+venv
+.idea
+.vscode
+*.pyc
+.idea/
+__pycache__
+.python-version
+logs
+etc/local.etc.yaml

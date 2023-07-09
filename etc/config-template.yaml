@@ -1,0 +1,44 @@
+rabbitmq_eyw:
+  host: "${AMQP_XHHK_HOST-"127.0.0.1"}"
+  password: "${AMQP_XHHK_PASSWORD-"guest"}"
+  port: ${AMQP_XHHK_PORT-"5672"}
+  username: "${AMQP_XHHK_USER-"guest"}"
+  virtual_host: "${AMQP_XHHK_VHOST_EINVOICE-"eyw"}"
+  sock_timeout: 60
+  heartbeat: 30
+
+api:
+    host: 0.0.0.0
+    port: 8080
+
+rdbms:
+    eyw:
+        connector: "postgresql"
+        driver: "postgresql"
+        host: "127.0.0.1"
+        port: 5432
+        user: "admin"
+        pwd: "123"
+        db: "eyw"
+
+sms_cfg:
+  aliyun_accept_format: "${ALIYUN_ACCEPT_FORMAT}"
+  aliyun_accesskeyid: "${ALIYUN_ACCESSKEYID}"
+  aliyun_accesssecret: "${ALIYUN_ACCESSSECRET}"
+  aliyun_domain: "${ALIYUN_DOMAIN}"
+  aliyun_regionid: "${ALIYUN_REGIONID}"
+  aliyun_version: "${ALIYUN_VERSION}"
+  cucc_apiurl: "${CUCC_APIURL}"
+  cucc_loginame: "${CUCC_LOGINAME}"
+  cucc_password: "${CUCC_PASSWORD}"
+  cucc_spcode: "${CUCC_SPCODE}"
+
+mail_cfg:
+  qq:
+    smtp_host: "smtp.qq.com"
+    smtp_port: 465
+    authorize_code: mnujopjkywtfddff
+  163:
+    smtp_host: "smtp.163.com"
+    smtp_port: 465
+    authorize_code: FXNQVMFDRSBZADTE

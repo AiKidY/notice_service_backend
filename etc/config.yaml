@@ -1,0 +1,44 @@
+rabbitmq_eyw:
+  host: '127.0.0.1'
+  port: 32072
+  virtual_host: 'eyw'
+  username: 'admin'
+  password: '123'
+  sock_timeout: 60
+  heartbeat: 30
+
+api:
+    host: 0.0.0.0
+    port: 8080
+
+rdbms:
+    eyw:
+        connector: "postgresql"
+        driver: "postgresql"
+        host: "127.0.0.1"
+        port: 5432
+        user: "admin"
+        pwd: "123"
+        db: "eyw"
+
+sms_cfg:
+  cucc_apiurl: http://api.ums86.com:8899/sms/Api/Send.do
+  cucc_spcode: 243676
+  cucc_loginame: admin
+  cucc_password: 123
+  aliyun_accesskeyid: LTAI4GCNyghGkc7YVwZa5Bja
+  aliyun_accesssecret: fvLpAIFwaOQSkjphL4YHe56YNf6sea
+  aliyun_regionid: cn-hangzhou
+  aliyun_domain: dysmsapi.aliyuncs.com
+  aliyun_version: '2017-05-25'
+  aliyun_accept_format: json
+
+mail_cfg:
+  qq:
+    smtp_host: "smtp.qq.com"
+    smtp_port: 465
+    authorize_code: mnujopjkywtfddff
+  163:
+    smtp_host: "smtp.163.com"
+    smtp_port: 465
+    authorize_code: FXNQVMFDRSBZADTE
